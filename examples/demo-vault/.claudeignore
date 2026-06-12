@@ -1,0 +1,8 @@
+# Conversion OS — excluded from AI reads
+Clients/_archive/
+.git/
+.obsidian/
+.trash/
+.DS_Store
+# Per-seat client exclusions are appended below by /team (machine-local — this
+# file is gitignored on team vaults; see docs/confidentiality.md)

@@ -1,0 +1,9 @@
+{
+  "name": "conversion-os",
+  "description": "Conversion OS Foundation — the client-operations AI operating system for agencies and consultancies, free tier. A markdown vault becomes your firm's compounding memory: adaptive onboarding (/setup), self-contained client workspaces with one-screen strategist briefs (/client), and a daily operating rhythm (/daily). Solo and Agency modes. Pro adds reports, health scoring, lifecycle, autopilot, audits, and team seats.",
+  "version": "1.0.1",
+  "author": {
+    "name": "Conversion System",
+    "email": "steve@conversionsystem.com"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "conversion-system",
+  "owner": {
+    "name": "Conversion System",
+    "email": "steve@conversionsystem.com"
+  },
+  "plugins": [
+    {
+      "name": "conversion-os",
+      "source": "./",
+      "description": "Client-operations AI OS for agencies (Foundation): per-client context workspaces, strategist briefs, adaptive vault setup, daily operating rhythm."
+    }
+  ]
+}

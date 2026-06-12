@@ -1,0 +1,6 @@
+.DS_Store
+.trash/
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+# Machine-local seat scoping (agency teams): each seat generates its own
+.claudeignore.local
