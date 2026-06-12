@@ -34,6 +34,42 @@ Skeleton for documenting a service: `## When to run this` · `## Inputs` ·
 `## Steps` (numbered, each with owner + quality bar) · `## Outputs` ·
 `## Common failure modes` · `## Examples` (anonymized only).
 
+### Library/templates/competitor-profile.md
+Skeleton for `Company/market/{competitor-slug}.md` (the firm's market) AND
+`Clients/{slug}/context/market.md` entries (a client's market — created from
+client scope, stored in the workspace): frontmatter (`type: context`,
+`reviewed:`, `tags: [market, competitor]`) · `## Who they are` (one paragraph:
+what they sell, to whom, at what price if known) · `## Their pitch` (positioning
++ the promise, paraphrased with source links) · `## Strengths` / `## Weak spots`
+(each line cites evidence: a page, a review, a lost-deal note) · `## What we do
+about it` (talk track: when we win against them, when we lose, what to say) ·
+`## Watch` (signals worth rechecking + when). Rule: update on contact with
+reality (lost deal, prospect mention), not on a calendar.
+
+### Library/templates/content-idea.md
+The idea card — one file per idea, lives in the relevant project's `ideas/`
+folder (firm content → `Projects/{content-project}/ideas/`; client content →
+`Clients/{slug}/work/{deliverable}/ideas/`, created from client scope):
+frontmatter (`type: note`, `status: draft|ready|published|killed`, `tags:
+[content, idea]`) · `## Hook` (the one line that earns the click) · `## Audience
++ trigger` (who, and what just happened to them) · `## Proof` (the number,
+story, or artifact that makes it credible — no proof, no draft) · `## Format`
+(post / newsletter / video / page) · `## Notes`.
+
+### Library/playbooks/content-pipeline.md
+How ideas become published assets: 1. **Capture** — anything resembling an idea
+gets a card from the template (triage routes stray ideas here). 2. **Qualify**
+weekly — kill cards with no proof or no audience trigger; promote the rest to
+`status: ready` (quality bar: you can say who it's for and why now in one
+breath). 3. **Brief** — ready cards get a 3-line brief: angle, proof, CTA.
+4. **Draft** — firm voice from `Library/prompts/write-like-us.md` + the format's
+style file; client content goes through /client draft in the client's voice
+instead. 5. **Publish + recycle** — published file gets `status: published` +
+the URL; winners (engagement, replies) get a recycle note: one idea, three
+formats. Failure modes: drafting unqualified ideas (most common) · proof-free
+opinion pieces · letting the ideas folder become a graveyard (weekly review
+counts cards >30 days old).
+
 ### Library/styles/ — four starter styles
 `client-email.md` (short, warm, one ask per email, subject = the ask) ·
 `report.md` (evidence-first, no adjectives without numbers) ·
