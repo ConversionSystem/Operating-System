@@ -1,33 +1,39 @@
-# Conversion OS — Foundation
+# Conversion OS
 
 **The client-operations system for agencies that run on Claude.**
 
 Conversion OS turns a folder of markdown files into your firm's operating
 system: persistent memory for every AI session, one self-contained workspace
-per client, and a daily operating rhythm — all visible in Obsidian, all owned
-by you.
+per client, an engagement lifecycle from prospect to renewal, KPI tracking
+that generates client reports, and a daily operating rhythm — all visible in
+Obsidian, all owned by you.
 
-This is **Foundation**, the free tier. It's the real system, not a teaser: the
-full vault architecture, the adaptive onboarding, the client workspace model,
-and the daily rituals. What it doesn't do is *run* the engagement for you —
-that's [Pro](#conversion-os-pro).
+> **Open beta — the full suite, free.** Every skill below is included while we
+> battle-test the system with real firms. When the beta ends, the advanced
+> suite becomes **Conversion OS Pro** (paid); the core stays free. Either way:
+> your vault and everything in it is plain markdown and belongs entirely to
+> you — nothing you build here can be taken away. Found friction? That's the
+> deal — [open an issue](../../issues).
 
 Built by [Conversion System](https://conversionsystem.com) — we run our own
 firm on it.
 
-## What Foundation includes
+## What's inside
 
 | Command | What it does |
 |---|---|
-| `/setup` | Scaffolds your vault, ingests the docs and website you already have *before* asking questions, interviews you adaptively, builds your firm's context with zero placeholder files — and ends with a generated brief for your #1 client |
-| `/client` | Onboard clients/prospects into self-contained workspaces (their brand, ICP, goals, people, meetings, work), and get a one-screen strategist brief on any of them |
-| `/daily` | Your operating rhythm: resume context, morning brief, inbox triage, save sessions to memory, weekly review, plain-markdown task boards |
+| `/setup` | Scaffolds your vault, ingests your website and docs *before* asking questions, interviews you adaptively, builds your firm's context with zero placeholder files — and ends with a generated brief for your #1 client |
+| `/client` | The engagement manager: onboard clients into self-contained workspaces, one-screen strategist briefs, meeting prep and transcript logging, deliverables in *the client's* voice, weekly/monthly reports generated from the KPI ledger, a 9-signal health engine with a book-of-business pipeline, lifecycle transitions with checklists, archive-with-harvest |
+| `/daily` | Your operating rhythm: resume context, morning brief, inbox triage, save sessions to memory, evening close, weekly review, plain-markdown task boards |
+| `/autopilot` | Builds and schedules an autonomous agent that pulls meeting transcripts, chat, and email into the right client workspaces — with run budgets and human escalation |
+| `/audit` | 6-category vault health check: structure, links, freshness, token budgets, the client-confidentiality firewall, frontmatter — score, report, per-category fixes |
+| `/team` | Team rollout: sync options compared honestly (git / LiveSync / Relay), seats with per-person client scoping, onboarding/offboarding checklists |
 
 Plus: the layered instruction architecture (a ≤120-line root routing file +
 per-folder rules + per-client confidentiality contracts), a session-end git
-snapshot hook so every memory write is revertible, a structure lint, and a
-[demo vault](examples/demo-vault/) you can open in Obsidian to see the end
-state before you start.
+snapshot hook so every memory write is revertible, and a
+[demo vault](examples/demo-vault/) — open it in Obsidian to see the end state
+before you start.
 
 ## Install (5 minutes)
 
@@ -39,32 +45,26 @@ state before you start.
 3. Optional: open the same folder as a vault in [Obsidian](https://obsidian.md)
    (free) to browse what Claude builds.
 
-Full walkthrough: [docs/setup-guide.md](docs/setup-guide.md).
+Then: [docs/setup-guide.md](docs/setup-guide.md) for the first hour,
+[docs/roadmap.md](docs/roadmap.md) for day 1 → quarter 1.
 
-## Conversion OS Pro
+## Docs
 
-Foundation lets you *hold* a client. Pro lets you *run* the engagement:
+- [Setup guide](docs/setup-guide.md) — your first hour, step by step
+- [Adoption roadmap](docs/roadmap.md) — the pace that works (solo first, team in week 4+)
+- [Team & sync guide](docs/team-and-sync-guide.md) — git vs LiveSync vs Relay, seats, rollout order
+- [Confidentiality model](docs/confidentiality.md) — three layers, honest limits
+- [Instruction layer guide](docs/instruction-layer-guide.md) — why the routing files stay small
 
-- **Reports that write themselves** — weekly/monthly client reports generated
-  from the KPI ledger and meeting history, with an email cover note
-- **Meeting intelligence** — prep briefs before calls; transcripts filed,
-  decisions/actions/metrics extracted after
-- **The health engine** — 9 mechanical churn-risk signals, a generated
-  book-of-business pipeline, renewal radar
-- **Engagement lifecycle** — prospect → renewal as a state machine with
-  transition checklists, archive-with-harvest that turns ended engagements
-  into playbooks and case studies
-- **`/autopilot`** — a scheduled agent that pulls transcripts/chat/email into
-  the right client workspaces with budgets and escalation
-- **`/audit`** — 6-category vault health checks with a confidentiality lint
-- **`/team`** — seats, per-person client scoping, onboarding/offboarding
-- **The playbook library** + quarterly update releases
+## Beta notes
 
-Pro, guided cohort builds, and done-with-you installs:
-**[conversionsystem.com](https://conversionsystem.com)** or open an issue here.
+- Feedback → [issues](../../issues). The fastest way to shape the product:
+  tell us where a flow asked too much, guessed wrong, or slowed you down.
+- Done-with-you installs for firms that want it running this month:
+  [conversionsystem.com](https://conversionsystem.com).
 
 ## License
 
-Source-available — free to use for your own firm and your clients' vaults; no
-redistribution or resale. See [LICENSE](LICENSE). Vaults you create, and
-everything in them, are entirely yours.
+Source-available — free to use for your own firm and your clients' vaults
+during the beta; no redistribution or resale. See [LICENSE](LICENSE). Vaults
+you create, and everything in them, are entirely yours — forever.
