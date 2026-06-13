@@ -35,6 +35,28 @@ snapshot hook so every memory write is revertible, and a
 [demo vault](examples/demo-vault/) — open it in Obsidian to see the end state
 before you start.
 
+## The client-delivery library
+
+The work you run *for* clients — and unlike standalone tools, every result
+writes back into that client's workspace, so it compounds. Run a skill, and its
+baseline lands in the client's KPI ledger; run it again next month and it leads
+with what changed.
+
+| Command | Delivers |
+|---|---|
+| `/lead-qualify` | Gate a lead list against the client's own ICP, with reasons |
+| `/lead-research` | Source + 3-axis-score prospects (Hot/Warm/Cold) from the ICP |
+| `/win-loss` | Deal patterns → a winning persona (written to the client's ICP) + a red-flag kill-list the other skills then use |
+| `/email-sequence` | A designed multi-email sequence in the client's voice |
+| `/email-personalize` | Human-sounding icebreakers, one per enriched lead |
+| `/case-study` | A results case study built from the KPI ledger — the before/after *is* the proof |
+| `/seo-audit` | A 16-category technical SEO audit with a tracked health score |
+| `/seo-optimize` | 8 Search Console analyses → a prioritized optimization roadmap |
+| `/ads-audit` | A multi-platform paid-media audit with a budget-weighted score |
+
+Zero external API needed — they run from manual exports and web research;
+scraping, Search Console, and ad-platform connectors are optional accelerators.
+
 ## Install (5 minutes)
 
 1. **Add the plugin** — in Claude Code or Cowork: Plugins → add marketplace →

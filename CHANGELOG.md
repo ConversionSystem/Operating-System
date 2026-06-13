@@ -1,5 +1,21 @@
 # Changelog — Conversion OS
 
+## [1.2.0] — 2026-06-13 · Client-delivery library (open beta)
+
+Nine new delivery skills you run FOR clients — and they write back into the
+client's workspace, so each run compounds instead of vanishing into a downloads
+folder:
+
+- `/lead-qualify`, `/lead-research`, `/win-loss` (sales)
+- `/email-sequence`, `/email-personalize` (outbound)
+- `/case-study` (proof, built from your KPI ledger)
+- `/seo-audit`, `/seo-optimize`, `/ads-audit` (audits as tracked, re-runnable
+  deliverables with longitudinal health scores)
+
+Each reads your client context, lands a deliverable in `work/`, writes baselines
+to the goals ledger, and charts deltas on re-run. Zero-API by default. Free
+during the open beta.
+
 ## [1.1.0] — 2026-06-12 · Open beta
 
 The full suite is now included free while we battle-test with real firms:
